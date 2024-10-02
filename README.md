@@ -1,8 +1,5 @@
 # Generative_bot
-Генеративный чат-бот, который должен говорить как персонаж Барнин Стинсон из сериала "Как я встретил вашу маму". 
-Транскрипты диалогов скачаны с сайта https://scriptmochi.com/tv-series/how-i-met-your-mother
-В качестве модели был выбран gpt2. Для обучения подавались реплики указанного персонажа, в качестве лейблов - следующее слово (то есть бот должен предсказать следующее слово персонажа). В итоге бот получился туповат и не сильно похож на указанного персонажа. Местами да, но он также почему-то начал говорить фразами из Гарри Поттера. 
-В планах: попробовать другую модель, T5, например. На данный момент не хватило времени и ресурсов. 
-Попробовать расширить датасет за счет, возможно, генерации похожих фраз и потом дообучить модель. Хотелось бы для начала узнать, верна ли моя парадигма обучения бота или нет.
+A generative chatbot that should talk like the character Barnin Stinson from "How I Met Your Mother". The dialog transcripts were downloaded from https://scriptmochi.com/tv-series/how-i-met-your-mother. gpt2 was chosen as the model. The bot ended up being dumb and not much like the specified character. Sometimes it spoke using phrases from Harry Potter for some reason. 
+Plans: Try to expand the dataset by possibly generating similar phrases and then retrain the model. 
 
-Upd. T5 на инференсе показывает более человеческий диалог. Определенно, проблема gpt2 именно в самой модели. Но по-прежнему слабо похоже а персонажа, хотя некоторое сходство есть. Полагаю, проблема в нехватке данных для обучения. В будущем планирую попробовать увеличить датасет путем генерации похожих фраз. Возможно можно придумать еще что-то для увеличения материалов для обучения.
+Upd. T5 on inference shows much better results. Definitely the problem with gpt2 is the model itself. But it still looks faintly like a character, although there are some similarities. I guess the problem is lack of data for training. In the future I plan to use Bro code to make a bigger dataset and RAG to improve results. 
